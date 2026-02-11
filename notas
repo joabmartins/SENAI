@@ -1,34 +1,46 @@
-programa {
-  funcao inicio() {
-		inteiro nota1, nota2, nota3
-    real media, recuperacao
+# SE SENÃO
+inteiro nota1, nota2, nota3
+real media, recuperacao
 
-		escreva("Digite a primeira nota: ")
-		leia(nota1)
-		escreva("Digite a segunda nota: ")
-		leia(nota2)
-    escreva("Digite a terceira nota: ")
-		leia(nota3)
+escreva("Digite a primeira nota: ")
+leia(nota1)
+escreva("Digite a segunda nota: ")
+leia(nota2)
+escreva("Digite a terceira nota: ")
+leia(nota3)
 
-		media = (nota1 + nota2 + nota3) / 3
+media = (nota1 + nota2 + nota3) / 3
 
-		escreva("Média: " + media + "\n")
+escreva("Média: " + media)
 
-		se (media >= 70) {
-			escreva("Situação: APROVADO\n")
-		}
-    se (media < 50) {
-			escreva("Situação: REPROVADO\n")
-		}
-		senao {
-      escreva("Situação: RECUPERAÇÃO\n")
-      escreva("Digite a nota da recuperação: ")
-      leia(recuperacao)
-      se (recuperacao >= 70) {
-        escreva("Situação: APROVADO\n")
-      }
-      senao {
-        escreva("Situação: REPROVADO\n")
-      }
-		}
-  
+se (media >= 70) {
+	escreva("Situação: APROVADO")
+} se (media < 50) {
+	escreva("Situação: REPROVADO")
+} senao {
+	escreva("Situação: RECUPERAÇÃO\n")
+	escreva("Digite a nota da recuperação: ")
+	leia(recuperacao)
+	se (recuperacao >= 70) {
+		escreva("Situação: APROVADO")
+	} senao {
+		escreva("Situação: REPROVADO")
+	}
+}
+
+# CASO FAÇA
+inteiro posicao
+
+escreva("posição")
+leia(posicao)
+
+escolha (posicao) {
+	caso 1:
+		escreva("primeiro")
+		pare
+	caso 2:
+		escreva("segundo")
+		pare
+	caso contrario:
+		escreva("terceiro")
+}
