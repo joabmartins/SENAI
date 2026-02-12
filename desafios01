@@ -1,0 +1,78 @@
+# 01
+inteiro idade
+escreva("Insira a idade")
+leia(idade)
+se (idade >= 18 ) {
+  escreva("Maior de idade")
+} senao {
+  escreva("Menor de idade")
+}
+
+# 02
+inteiro numero
+escreva("Insira um numero inteiro")
+leia(numero)
+se (numero % 2 == 0 ) {
+  escreva("Número é par")
+} senao {
+  escreva("Número é ímpar")
+}
+
+# 03 
+inteiro idade
+real salario
+logico tem_dividas
+escreva("Insira a idade")
+leia(idade)
+escreva("Insira o salário")
+leia(salario)
+escreva("Insira se o usuário tem dívidas (verdadeiro ou falso apenas)")
+leia(tem_dividas)
+se (idade > 21 e salario >= 3000 e nao tem_dividas) {
+  escreva("Empréstimo Liberado!")
+} senao {
+  escreva("Empréstimo Negado!")
+}
+
+# 04
+// Declaração de variáveis
+real num1, num2, resultado
+inteiro opcao
+
+escreva("Digite o primeiro número: ")
+leia(num1)
+escreva("Digite o segundo número: ")
+leia(num2)
+
+escreva("\nEscolha a operação:\n")
+escreva("1) Somar\n")
+escreva("2) Subtrair\n")
+escreva("3) Dividir\n")
+escreva("4) Multiplicar\n")
+escreva("Opção: ")
+leia(opcao)
+
+// Estrutura Escolha Caso
+escolha (opcao)
+{
+  caso 1: 
+    resultado = num1 + num2
+    pare // Sai da estrutura para não executar os de baixo
+
+  caso 2: 
+    resultado = num1 - num2
+    pare
+
+  caso 3: 
+    resultado = num1 / num2
+    pare
+    
+  caso 4: 
+    resultado = num1 * num2
+    pare
+
+  caso contrario: 
+    escreva("Opção inválida! Tente de 1 a 4.")
+}
+
+escreva("Resultado " + resultado)
